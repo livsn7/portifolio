@@ -1,6 +1,14 @@
+/* ==========================================================================
+   VARIAVEIS DE CORES - PALETA ROSA PASTEL
+   #c999af (Ameixa Mauve Suave)
+   #e3b1c8 (Rosa Pastel Médio)
+   #fdcae1 (Rosa Bebê Claro)
+   #ffe5f0 (Rosa Pastel Off-White)
+   #ffffff (Branco Puro)
+   ========================================================================== */
 
 :root {
-    /* Paleta Light Mode (Suave Rosa Pastel) */
+    /* Paleta Light Mode */
     --cor-fundo: #ffe5f0;
     --cor-card: #ffffff;
     --cor-card-hover: #fdcae1;
@@ -16,7 +24,7 @@
     --fonte-principal: 'Plus Jakarta Sans', sans-serif;
 }
 
-/* Modo Escuro Harmonizado com a Paleta Pastel */
+/* Modo Escuro Harmonizado */
 body.tema-escuro {
     --cor-fundo: #171015;
     --cor-card: #261b23;
@@ -55,7 +63,7 @@ body {
     padding: 0 15px;
 }
 
-/* BARRA DE ROLAGEM PERSONALIZADA */
+/* BARRA DE ROLAGEM */
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -244,7 +252,7 @@ body.tema-escuro .cabecalho {
     color: #fff;
 }
 
-/* ESTILOS DE SEÇÃO E CARDS */
+/* SEÇÕES E CARDS */
 .secao-sobre, .secao-formacao, .secao-projetos, .secao-contato {
     padding: 80px 0;
 }
@@ -284,7 +292,7 @@ body.tema-escuro .cabecalho {
     border: 1px solid var(--cor-borda);
 }
 
-/* FORMAÇÃO UI/UX CLEAN (OPÇÃO 3) */
+/* FORMAÇÃO */
 .card-formacao-principal {
     background: var(--cor-card);
     border-radius: 20px;
@@ -525,7 +533,7 @@ body.tema-escuro .cabecalho {
     transform: translateY(0);
 }
 
-/* RESPONSIVIDADE (MOBILE FIRST / MEDIA QUERIES) */
+/* RESPONSIVIDADE (MOBILE) */
 @media (max-width: 992px) {
     .grid-modulos-trilha,
     .grid-repositorios-estudo,
