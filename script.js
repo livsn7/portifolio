@@ -1,6 +1,5 @@
 /* ==========================================================================
-PORTFÓLIO DEV - SCRIPT PRINCIPAL
-Lógica desenvolvida em JavaScript Vanilla
+   PORTFÓLIO DEV - SCRIPT PRINCIPAL
    ========================================================================== */
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -19,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // 2. EFEITO MÁQUINA DE ESCREVER NA SEÇÃO HERO
+    // 2. EFEITO MÁQUINA DE ESCREVER
     const elementoTexto = document.getElementById("texto-digitado");
     const frasesApresentacao = [
         "Estudante de Desenvolvimento Full Stack",
@@ -45,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
         let velocidade = estaApagando ? 50 : 100;
 
         if (!estaApagando && indiceCaractere === fraseAtual.length) {
-            velocidade = 2000; // Pausa no final da frase
+            velocidade = 2000;
             estaApagando = true;
         } else if (estaApagando && indiceCaractere === 0) {
             estaApagando = false;
@@ -73,7 +72,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // Fechar menu ao clicar em um link
     document.querySelectorAll(".link-menu").forEach(link => {
         link.addEventListener("click", () => {
             menuNavegacao.classList.remove("ativo");
@@ -103,7 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const elementoAno = document.getElementById("ano-atual");
     elementoAno.textContent = new Date().getFullYear();
 
-    // 6. ANIMAÇÃO DE FADE-IN EM CADA SEÇÃO DURANTE A ROLAGEM
+    // 6. ANIMAÇÃO DE SCROLL
     const secoesOcultas = document.querySelectorAll(".secao-oculta");
 
     const observadorScroll = new IntersectionObserver((entradas) => {
