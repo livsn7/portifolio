@@ -38,7 +38,7 @@ body.tema-escuro {
 }
 
 /* RESET E BASE */
-* {
+*, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -405,6 +405,13 @@ body.tema-escuro .cabecalho {
     font-weight: 600;
 }
 
+/* Organização dos botões do card de projeto */
+.botoes-card-projeto {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
 .botao-card {
     display: inline-block;
     padding: 8px 18px;
@@ -414,6 +421,18 @@ body.tema-escuro .cabecalho {
     border-radius: 15px;
     font-size: 0.85rem;
     font-weight: 600;
+    transition: var(--transicao-padrao);
+}
+
+.botao-card:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+/* Estilo personalizado para o botão "Visitar Site" (cor diferenciada) */
+.botao-card.botao-site {
+    background: var(--cor-texto-principal);
+    color: #fff;
 }
 
 .grid-repositorios-estudo {
